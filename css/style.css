@@ -1,5 +1,5 @@
 .weather{
-    background-image: url('/image/GettyImages-1160351539-8343780b9a964f0888a31b30bf2fcd27.jpg');
+    background-image: url('../image/GettyImages-1160351539-8343780b9a964f0888a31b30bf2fcd27.jpg');
     background-size: 100% 100%;
     background-attachment: fixed;
 }

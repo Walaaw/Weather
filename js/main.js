@@ -71,7 +71,7 @@ function getNextDayData(){
     for (let i = 0; i < nextDay.length; i++) {
         let date=new Date(data.forecast.forecastday[i+1].date);
         nextDay[i].innerHTML=days[date.getDay()];
-        nextIcon[i].setAttribute("src",`${data.forecast.forecastday[i+1].day.condition.icon}`)
+        nextIcon[i].setAttribute("src",`https://${data.forecast.forecastday[i+1].day.condition.icon}`)
         nexttempC[i].innerHTML=data.forecast.forecastday[i+1].day.maxtemp_c +" C"
         nextStatus[i].innerHTML=data.forecast.forecastday[i+1].day.condition.text
     }
