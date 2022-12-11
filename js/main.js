@@ -42,7 +42,7 @@ let nextDay=document.getElementsByClassName("nextday"),
     "Saturday",
   ];
  async function getWeatherApi(){
-    let resbonse= await fetch( `http://api.weatherapi.com/v1/forecast.json?key=a9a49e764a4644ef945111522220312&q=${country}&days=4`)
+    let resbonse= await fetch( `https://api.weatherapi.com/v1/forecast.json?key=a9a49e764a4644ef945111522220312&q=${country}&days=4`)
     data=await resbonse.json();
     getCurrentData();
     getNextDayData();
