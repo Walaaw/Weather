@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather </title>
+     <!-- link bootstarp     -->
+     <link rel="stylesheet" href="./css/bootstrap.min.css">
+     <!-- linkk font awesome -->
+     <link rel="stylesheet" href="./css/all.min.css">
+     <!-- link css style sheet -->
+     <link rel="stylesheet" href="./css/style.css">
+     <!-- website icon -->
+     <link rel="icon" href="./image/logo.png" />
+</head>
+<body>
+    <section class="weather pb-5 ">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg bg-transparent ">
+            <div class="container">
+              <a class="navbar-brand" href="#"><img src="./image/logo.png" alt="" class="w-90"><span class="m-2">weather</span></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item  m-2">
+                    <a class="nav-link active py-2 px-3" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item  m-2">
+                    <a class="nav-link py-2 px-3" href="#">News</a>
+                  </li>
+                  <li class="nav-item m-2">
+                    <a class="nav-link py-2 px-3" href="#">Live Camera</a>
+                  </li>
+                  <li class="nav-item m-2">
+                    <a class="nav-link py-2 px-3" href="#">Photo</a>
+                  </li>
+                </ul>
+              
+              </div>
+            </div>
+        </nav>
+        <!-- search input -->
+        <div class=" position-relative mt-5">
+            <input id="search" type="text" class="fs form-control bg-transparent text-dark p-3 w-50 m-auto rounded-pill " placeholder=" find your location">
+        </div>
+        <!-- today card -->
+        <div class="w-75 m-auto mt-5  shadow-sm rounded today-card">
+            <div class="card-header d-flex justify-content-around p-2 bg-dark text-warning fs-5 mb-5">
+                <p class="search " id="day"></p>
+               <div> 
+                <span id="date"></span>
+                <span class="" id="mounth"></span></div>
+            </div>
+           <div class=" d-flex justify-content-around fw-bold fs-5 mb-3">
+            <p id="city"></p>
+            <p id="region"></p>
+           </div>
+            <div class="tempc d-flex justify-content-around align-items-center fw-bold fs-5">
+                <p id="tempc" class=" text-warning fs-2"></p>
+                <p  class="text-center"  id="condition"></p>
+                <img id="icon"  alt="icon">
+            </div>
+           
+            <div class="footer py-3 text-white my-4 px-4 d-flex justify-content-around bg-dark">
+               <div>
+                <i class="fa-solid fa-umbrella text-warning "></i>
+                <span id="humadity"></i></span>
+               </div>
+               <div>
+                <i class="fa-solid fa-wind text-warning "></i>
+                <span id="wind"></span>
+               </div>
+               <div>
+                <i class="fa-brands fa-nfc-directional text-warning "></i>
+                <span id="wind-dir"></span>
+               </div>
+                
+            </div>
+        </div>
+        <!-- next day card -->
+        <div class=" w-75 m-auto mt-3 ">
+           <div class="row g-5">
+            <div class="col-md-4 ">
+                <div class="item nextday-card">
+                    <div class="card-header mb-3 d-flex justify-content-center p-2 bg-dark text-warning ">
+                        <p class="nextday ">day</p>
+                    </div>
+                    <div class="tempc flex-column d-flex justify-content-center align-items-center">
+                        <p class="fs-3 fw-bold nextTempC"></p>
+                        <img class="nextIcon" alt="icon">
+                        <p class="nextSataus fw-bold fs-5"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 ">
+                <div class="item nextday-card">
+                    <div class="card-header mb-3 d-flex justify-content-center p-2 bg-dark text-warning ">
+                        <p class="nextday ">day</p>
+                    </div>
+                    <div class="tempc flex-column d-flex justify-content-center align-items-center">
+                        <p class="fs-3 fw-bold nextTempC"></p>
+                        <img class="nextIcon" alt="icon">
+                        <p class="nextSataus fw-bold fs-5"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 ">
+                <div class="item nextday-card">
+                    <div class="card-header mb-3 d-flex justify-content-center p-2 bg-dark text-warning ">
+                        <p class="nextday ">day</p>
+                    </div>
+                    <div class="tempc flex-column d-flex justify-content-center align-items-center">
+                        <p class="fs-3 fw-bold nextTempC"></p>
+                        <img class="nextIcon" alt="icon">
+                        <p class="nextSataus fw-bold fs-5"></p>
+                    </div>
+                </div>
+            </div>
+           </div>
+        </div>
+    </section>
+     <!-- footer -->
+    <footer>
+        <div class="container">
+          <p class="text-center text-white mb-0">Copyright &copy; 2021 Designed by Shimaa. All rights reserved</p>
+          <div class="social-media text-white text-center mt-2">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-pinterest"></i>
+                <i class="fab fa-google-plus"></i>
+          </div>
+        </div>
+      </footer>
+
+
+
+
+      <!-- link bootstrap -->
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <!-- link javaScript file  -->
+      <script src="js/main.js"></script>
+</body>
+</html>
